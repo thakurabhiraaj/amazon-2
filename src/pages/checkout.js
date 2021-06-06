@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useSelector } from "react-redux";
-import CheckOutProduct from "../components/CheckOutProduct";
+import CheckoutProduct from "../components/CheckoutProduct";
 import Header from "../components/Header";
 import { selectItems } from "../slices/basketSlice";
 
@@ -30,7 +30,7 @@ function Checkout() {
             </h1>
 
             {items.map((item, i) => (
-              <CheckOutProduct 
+              <CheckoutProduct 
                 key={i}
                 id={item.id}
                 title={item.title}
