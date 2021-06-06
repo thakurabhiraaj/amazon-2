@@ -30,7 +30,7 @@ function Checkout() {
             </h1>
 
             {items.map((item, i) => (
-              <CheckoutProduct 
+              <CheckoutProduct
                 key={i}
                 id={item.id}
                 title={item.title}
