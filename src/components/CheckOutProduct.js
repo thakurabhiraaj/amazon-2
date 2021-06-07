@@ -35,7 +35,7 @@ function CheckoutProduct({
   const removeItemFromBasket = () => {
     //remove item from redux
     dispatch(removeFromBasket({ id }));
-  }
+  };
 
   return (
     <div className="grid grid-cols-5">
@@ -69,13 +69,15 @@ function CheckoutProduct({
           </div>
         )}
       </div>
-      
+
       {/* Right add/remove buttons */}
       <div className="flex flex-col space-y-2 my-auto justify-self-end">
         <button className="button" onClick={addItemToBasket}>
           Add to Basket
         </button>
-        <button className="button" onClick={removeItemFromBasket}>Remove from Basket</button>
+        <button className="button" onClick={removeItemFromBasket}>
+          Remove from Basket
+        </button>
       </div>
     </div>
   );

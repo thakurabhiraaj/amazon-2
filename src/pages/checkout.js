@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { useSelector } from "react-redux";
 import Header from "../components/Header";
-import CheckoutProduct from "../components/CheckoutProduct";
 import { selectItems, selectTotal } from "../slices/basketSlice";
 import Currency from "react-currency-formatter";
 import { useSession } from "next-auth/client";
+import CheckoutProduct from "../components/CheckOutProduct";
 
 function Checkout() {
   const items = useSelector(selectItems);
