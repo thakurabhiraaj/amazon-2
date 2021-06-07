@@ -47,7 +47,7 @@ function Product({ id, title, price, description, category, image }) {
         {Array(rating)
           .fill()
           .map((_, i) => (
-            <StarIcon className="h-5" />
+            <StarIcon id="i" className="h-5" />
           ))}
       </div>
 
