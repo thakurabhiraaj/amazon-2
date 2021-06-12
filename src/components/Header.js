@@ -46,14 +46,18 @@ function Header() {
             <p className="font-extrabold md:text-sm">Account & Lists</p>
           </div>
 
-          <div className="link">
+          <div
+            onClick={() => session && router.push("/orders")}
+            className="link"
+          >
             <p>Returns</p>
             <p className="font-extrabold md:text-sm">& Orders</p>
           </div>
 
-          <div 
+          <div
             onClick={() => router.push("/checkout")}
-            className="relative link flex items-center">
+            className="relative link flex items-center"
+          >
             <span className="absolute top-0 right-0 md:right-10 h-4 w-4 bg-yellow-400 rounded-full text-center text-black font-bold">
               {items.length}
             </span>
